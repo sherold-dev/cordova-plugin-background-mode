@@ -136,7 +136,7 @@ public class ForegroundService extends Service {
             }
         }
 
-        tag = "BackgroundMode";
+        String tag = "BackgroundMode";
         // add fake tag name for Huawei to prevent HwPFWService to kill the wakelock
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M && Build.MANUFACTURER.equals("Huawei")) {
             tag = "LocationManagerService";
